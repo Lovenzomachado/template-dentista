@@ -1,12 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dentist</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CureNest - Modern Healthcare</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar-wrapper">
+    <nav class="navbar">
+      <a href="#" class="nav-logo">
+        <div style="width:24px; height:24px; background:#0f172a; border-radius:50%;"></div>
+        CureNest
+      </a>
+      <div class="nav-links">
+        <a href="#" class="nav-link">Home</a>
+        <a href="#" class="nav-link">Services</a>
+        <a href="#" class="nav-link">Doctors</a>
+        <a href="#" class="nav-link">Blog</a>
+      </div>
+      <button class="nav-cta">Book Now</button>
+      <button class="mobile-toggle">
+        <i data-lucide="menu"></i>
+      </button>
+    </nav>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <div class="hero-content">
+      <div class="blur-fade delay-100">
+        <div class="badge">
+          <span class="badge-dot"></span>
+          Reimagining Digital Health
+        </div>
+      </div>
+      
+      <div class="blur-fade delay-200">
+        <h1 class="hero-title">
+          Healthcare <span style="font-family: 'Playfair Display', serif;">simplified</span><br> for everyone.
+        </h1>
+      </div>
+
+      <div class="blur-fade delay-300">
+        <p class="hero-subtitle">
+          Experience the future of medical care with our intelligent platform. Seamless appointments, expert consultations, and personalized records.
+        </p>
+      </div>
+
+      <div class="blur-fade delay-400 hero-actions">
+        <a href="#" class="btn btn-primary">
+          Get Started
+          <i data-lucide="arrow-right" style="margin-left: 8px; width: 16px;"></i>
+        </a>
+        <a href="#" class="btn btn-secondary">
+          How it works
+        </a>
+      </div>
+
+      <div class="blur-fade delay-400 hero-image-wrapper">
+        <img src="https://images.unsplash.com/photo-1758691463393-a2aa9900af8a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzbWlsaW5nJTIwZG9jdG9yJTIwcG9ydHJhaXQlMjB3aGl0ZSUyMGNvYXR8ZW58MXx8fHwxNzcwMDg3OTQ0fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Dashboard">
+      </div>
+    </div>
+  </section>
+
+  <!-- Marquee Section -->
+  <section class="marquee-section">
+    <div class="container" style="text-align:center; margin-bottom:2rem;">
+      <p style="text-transform:uppercase; font-size:0.875rem; letter-spacing:0.1em; color:var(--color-text-muted);">Trusted by 10,000+ Patients</p>
+    </div>
+    <div class="marquee-container">
+      <!-- Duplicated content for infinite loop illusion -->
+      <div class="marquee-content">
+        <div class="marquee-item"><img src="https://i.pravatar.cc/150?img=11" alt="Doctor"></div>
+        <div class="marquee-item"><img src="https://i.pravatar.cc/150?img=5" alt="Doctor"></div>
+        <div class="marquee-item"><img src="https://i.pravatar.cc/150?img=3" alt="Doctor"></div>
+        <div class="marquee-item"><img src="https://i.pravatar.cc/150?img=9" alt="Doctor"></div>
+        <div class="marquee-item"><img src="https://i.pravatar.cc/150?img=12" alt="Doctor"></div>
+        <div class="marquee-item"><img src="https://i.pravatar.cc/150?img=20" alt="Doctor"></div>
+        <div class="marquee-item"><img src="https://i.pravatar.cc/150?img=11" alt="Doctor"></div>
+        <div class="marquee-item"><img src="https://i.pravatar.cc/150?img=5" alt="Doctor"></div>
+        <div class="marquee-item"><img src="https://i.pravatar.cc/150?img=3" alt="Doctor"></div>
+        <div class="marquee-item"><img src="https://i.pravatar.cc/150?img=9" alt="Doctor"></div>
+        <div class="marquee-item"><img src="https://i.pravatar.cc/150?img=12" alt="Doctor"></div>
+        <div class="marquee-item"><img src="https://i.pravatar.cc/150?img=20" alt="Doctor"></div>
+      </div>
+      <div class="marquee-content" aria-hidden="true">
+        <div class="marquee-item"><img src="https://i.pravatar.cc/150?img=11" alt="Doctor"></div>
+        <div class="marquee-item"><img src="https://i.pravatar.cc/150?img=5" alt="Doctor"></div>
+        <div class="marquee-item"><img src="https://i.pravatar.cc/150?img=3" alt="Doctor"></div>
+        <div class="marquee-item"><img src="https://i.pravatar.cc/150?img=9" alt="Doctor"></div>
+        <div class="marquee-item"><img src="https://i.pravatar.cc/150?img=12" alt="Doctor"></div>
+        <div class="marquee-item"><img src="https://i.pravatar.cc/150?img=20" alt="Doctor"></div>
+        <div class="marquee-item"><img src="https://i.pravatar.cc/150?img=11" alt="Doctor"></div>
+        <div class="marquee-item"><img src="https://i.pravatar.cc/150?img=5" alt="Doctor"></div>
+        <div class="marquee-item"><img src="https://i.pravatar.cc/150?img=3" alt="Doctor"></div>
+        <div class="marquee-item"><img src="https://i.pravatar.cc/150?img=9" alt="Doctor"></div>
+        <div class="marquee-item"><img src="https://i.pravatar.cc/150?img=12" alt="Doctor"></div>
+        <div class="marquee-item"><img src="https://i.pravatar.cc/150?img=20" alt="Doctor"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Horizontal Scroll Services Section -->
+  <section class="h-scroll-section">
+    <div class="h-scroll-sticky">
+      <div class="h-scroll-container">
+        
+        <div class="h-scroll-title blur-fade">
+          <h2>Seamless <br> <span style="color:var(--color-primary);">Care</span> Flow.</h2>
+          <p style="color:#94a3b8; font-size:1.125rem;">Scroll to explore our specialized departments designed for your well-being.</p>
+        </div>
+
+        <div class="h-scroll-track">
+          <!-- Card 1 -->
+          <div class="card">
+            <div>
+              <div class="card-icon"><i data-lucide="stethoscope" color="white"></i></div>
+              <h3>General Care</h3>
+              <p>Daily health needs and checkups.</p>
+            </div>
+            <div class="card-action">
+              <span style="font-size:0.75rem; text-transform:uppercase; color:#cbd5e1;">Explore</span>
+              <i data-lucide="arrow-right" color="white" size="16"></i>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="card">
+            <div>
+              <div class="card-icon"><i data-lucide="heart" color="white"></i></div>
+              <h3>Cardiology</h3>
+              <p>Heart specialists and surgery.</p>
+            </div>
+            <div class="card-action">
+              <span style="font-size:0.75rem; text-transform:uppercase; color:#cbd5e1;">Explore</span>
+              <i data-lucide="arrow-right" color="white" size="16"></i>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="card">
+            <div>
+              <div class="card-icon"><i data-lucide="brain" color="white"></i></div>
+              <h3>Neurology</h3>
+              <p>Brain health experts.</p>
+            </div>
+            <div class="card-action">
+              <span style="font-size:0.75rem; text-transform:uppercase; color:#cbd5e1;">Explore</span>
+              <i data-lucide="arrow-right" color="white" size="16"></i>
+            </div>
+          </div>
+           <!-- Card 4 -->
+           <div class="card">
+            <div>
+              <div class="card-icon"><i data-lucide="smile" color="white"></i></div>
+              <h3>Dental</h3>
+              <p>Bright smiles and implants.</p>
+            </div>
+            <div class="card-action">
+              <span style="font-size:0.75rem; text-transform:uppercase; color:#cbd5e1;">Explore</span>
+              <i data-lucide="arrow-right" color="white" size="16"></i>
+            </div>
+          </div>
+           <!-- Card 5 -->
+           <div class="card">
+            <div>
+              <div class="card-icon"><i data-lucide="activity" color="white"></i></div>
+              <h3>Pediatrics</h3>
+              <p>Care for infants and kids.</p>
+            </div>
+            <div class="card-action">
+              <span style="font-size:0.75rem; text-transform:uppercase; color:#cbd5e1;">Explore</span>
+              <i data-lucide="arrow-right" color="white" size="16"></i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-img blur-fade">
+          <img src="https://images.unsplash.com/photo-1758653500481-a1b46b5b63d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxudXJzZSUyMGhlbHBpbmclMjBwYXRpZW50JTIwaG9zcGl0YWx8ZW58MXx8fHwxNzcwMDg3OTQ0fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Nurse and Patient">
+        </div>
+        <div class="feature-content">
+          <div class="blur-fade delay-100">
+            <h2>Modern care designed around <span style="color:var(--color-primary);">you</span>.</h2>
+          </div>
+          <div class="blur-fade delay-200">
+            <p style="color:var(--color-text-muted);">We believe in a future where healthcare is proactive, not reactive. Our digital-first approach ensures you have access to the best specialists whenever you need them.</p>
+          </div>
+          
+          <div class="feature-list blur-fade delay-300">
+            <div class="feature-item">
+              <div class="feature-number">1</div>
+              <div>
+                <h4 style="font-weight:600; margin-bottom:0.25rem;">Smart Scheduling</h4>
+                <p style="font-size:0.875rem; color:var(--color-text-muted);">AI-powered booking system that respects your time.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-number">2</div>
+              <div>
+                <h4 style="font-weight:600; margin-bottom:0.25rem;">Digital Records</h4>
+                <p style="font-size:0.875rem; color:var(--color-text-muted);">Access your full medical history securely from anywhere.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq">
+    <div class="container" style="max-width:800px;">
+      <div class="faq-header blur-fade">
+        <h2 style="font-size:2.5rem; font-weight:500;">Frequently Asked</h2>
+      </div>
+      
+      <div class="blur-fade delay-100">
+        <div class="faq-item">
+          <span>How do I schedule a virtual appointment?</span>
+          <i data-lucide="plus" style="color:var(--color-text-muted);"></i>
+        </div>
+        <div class="faq-item">
+          <span>Is my medical data secure?</span>
+          <i data-lucide="plus" style="color:var(--color-text-muted);"></i>
+        </div>
+        <div class="faq-item">
+          <span>What insurance plans do you accept?</span>
+          <i data-lucide="plus" style="color:var(--color-text-muted);"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div style="margin-bottom: 1.5rem; font-weight: 700; font-size: 1.5rem; color: var(--color-text);">CureNest</div>
+      <p>&copy; 2026 CureNest. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
